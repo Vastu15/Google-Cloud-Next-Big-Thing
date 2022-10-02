@@ -53,22 +53,64 @@
 	<!-- Code to handle taking the snapshot and displaying it locally -->
 	<script language="JavaScript">
 		var timer = null;
-		
+		function base64ToBlob(base64, mime) 
+			{
+				mime = mime || '';
+				var sliceSize = 1024;
+				var byteChars = window.atob(base64);
+				var byteArrays = [];
+
+				for (var offset = 0, len = byteChars.length; offset < len; offset += sliceSize) {
+					var slice = byteChars.slice(offset, offset + sliceSize);
+
+					var byteNumbers = new Array(slice.length);
+					for (var i = 0; i < slice.length; i++) {
+						byteNumbers[i] = slice.charCodeAt(i);
+					}
+
+					var byteArray = new Uint8Array(byteNumbers);
+
+					byteArrays.push(byteArray);
+				}
+
+				return new Blob(byteArrays, {type: mime});
+			}
+		function uploadImage(imageBytes)
+		{
+
+			var base64ImageContent = imageBytes.replace(/^data:image\/(png|jpeg);base64,/, "");
+			var blob = base64ToBlob(base64ImageContent, 'image/png');  
+			var formdata = new FormData();
+			formdata.append("imageData", blob);
+			formdata.append("UID", "vastu");
+
+			var requestOptions = {
+			method: 'POST',
+			body: formdata,
+			redirect: 'follow'
+			};
+
+			fetch("http://localhost:8000/upload", requestOptions)
+			.then(response => response.text())
+			.then(result => console.log(result))
+			.catch(error => console.log('error', error));
+		}
 		function take_snapshot() {
 			// take snapshot and get image data
 			Webcam.snap( function(data_uri) {
 				// display results in page
+				uploadImage(data_uri);
 				var img = new Image();
-				img.src = data_uri;
-				
+				img.src = data_uri;			
 				document.getElementById('results').appendChild( img );
 			} );
+			
 		}
 		
 		function start_snapping() {
 			if (!timer) {
-				take_snapshot();
-				timer = setInterval( take_snapshot, 400 );
+				// take_snapshot();
+				timer = setInterval( take_snapshot, 500 );
 			}
 		}
 		
