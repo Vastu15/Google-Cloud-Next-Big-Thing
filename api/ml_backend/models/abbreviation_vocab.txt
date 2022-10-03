@@ -1,0 +1,617 @@
+<tbody><tr>
+<th style="text-align:center;">Abbreviation</th>
+<th style="text-align:center;">Full-name</th>
+</tr>
+<tr>
+<td style="text-align:center;">A/D</td>
+<td>Analog-to-Digital</td>
+</tr>
+<tr>
+<td style="text-align:center;">ABC</td>
+<td>Atanasoff Berry Computer</td>
+</tr>
+<tr>
+<td style="text-align:center;">ACM</td>
+<td>Association for Computing Machinery</td>
+</tr>
+<tr>
+<td style="text-align:center;">AI</td>
+<td>Artificial Intelligence</td>
+</tr>
+<tr>
+<td style="text-align:center;">ALGOL</td>
+<td>Algorithic Language</td>
+</tr>
+<tr>
+<td style="text-align:center;">ALU</td>
+<td>Arithmetic Logic Unit</td>
+</tr>
+<tr>
+<td style="text-align:center;">AMD</td>
+<td>Advanced Micro Devices</td>
+</tr>
+<tr>
+<td style="text-align:center;">ARPANET</td>
+<td>Advanced Research Project Agency Network</td>
+</tr>
+<tr>
+<td style="text-align:center;">ASCII</td>
+<td>American Standard Code for Information Interchange</td>
+</tr>
+<tr>
+<td style="text-align:center;">BASIC</td>
+<td>Beginners All-purpose Symbolic Instruction Code</td>
+</tr>
+<tr>
+<td style="text-align:center;">BCD</td>
+<td>Binary Coded Decimal</td>
+</tr>
+<tr>
+<td style="text-align:center;">BIOS</td>
+<td>Basic Inpute Output System</td>
+</tr>
+<tr>
+<td style="text-align:center;">BIPS</td>
+<td>Billions of Instructions Per Second</td>
+</tr>
+<tr>
+<td style="text-align:center;">BPI</td>
+<td>Bytes Per Inch</td>
+</tr>
+<tr>
+<td style="text-align:center;">CAD</td>
+<td>Computer Aided Design</td>
+</tr>
+<tr>
+<td style="text-align:center;">CAE</td>
+<td>Computer Aided Engineering</td>
+</tr>
+<tr>
+<td style="text-align:center;">CAN</td>
+<td>Campus Area Network</td>
+</tr>
+<tr>
+<td style="text-align:center;">CASE</td>
+<td>Computer Aided Software Engineering</td>
+</tr>
+<tr>
+<td style="text-align:center;">CD</td>
+<td>Compact Disk</td>
+</tr>
+<tr>
+<td style="text-align:center;">CDC</td>
+<td>Control Data Corporation</td>
+</tr>
+<tr>
+<td style="text-align:center;">CD-R</td>
+<td>CD-Recordable</td>
+</tr>
+<tr>
+<td style="text-align:center;">CD-ROM</td>
+<td>Compact Disk Read Only Memory</td>
+</tr>
+<tr>
+<td style="text-align:center;">CD-RW</td>
+<td>CD Read/Write</td>
+</tr>
+<tr>
+<td style="text-align:center;">CL</td>
+<td>Command Language</td>
+</tr>
+<tr>
+<td style="text-align:center;">CLI</td>
+<td>Command Line Interface</td>
+</tr>
+<tr>
+<td style="text-align:center;">COBOL</td>
+<td>Common Business Oriented</td>
+</tr>
+<tr>
+<td style="text-align:center;">CODASYL</td>
+<td>Conference On Data Systems</td>
+</tr>
+<tr>
+<td style="text-align:center;">CPU</td>
+<td>Central Processing Unit</td>
+</tr>
+<tr>
+<td style="text-align:center;">CRT</td>
+<td>Cathode Ray Tube</td>
+</tr>
+<tr>
+<td style="text-align:center;">D/A</td>
+<td>Digital-to-Analog</td>
+</tr>
+<tr>
+<td style="text-align:center;">DAT</td>
+<td>Digital Audio Tape</td>
+</tr>
+<tr>
+<td style="text-align:center;">DBMS</td>
+<td>Data Base Management System</td>
+</tr>
+<tr>
+<td style="text-align:center;">DBS</td>
+<td>Demand Based Switching</td>
+</tr>
+<tr>
+<td style="text-align:center;">DDL</td>
+<td>Data Definition Language</td>
+</tr>
+<tr>
+<td style="text-align:center;">DDS</td>
+<td>Digital Data Storage</td>
+</tr>
+<tr>
+<td style="text-align:center;">DEC</td>
+<td>Digital Equipment Corporation</td>
+</tr>
+<tr>
+<td style="text-align:center;">DMA</td>
+<td>Direct Memory Access</td>
+</tr>
+<tr>
+<td style="text-align:center;">DNA</td>
+<td>Digital Network Architecture</td>
+</tr>
+<tr>
+<td style="text-align:center;">DPI</td>
+<td>Dots Per Inch</td>
+</tr>
+<tr>
+<td style="text-align:center;">DRAM</td>
+<td>Dynamic RAM</td>
+</tr>
+<tr>
+<td style="text-align:center;">DSN</td>
+<td>Distributed Systems Network</td>
+</tr>
+<tr>
+<td style="text-align:center;">DTS</td>
+<td>Digital Theater System</td>
+</tr>
+<tr>
+<td style="text-align:center;">DVD</td>
+<td>Digital Video/Versatile Disk</td>
+</tr>
+<tr>
+<td style="text-align:center;">EBCDIC</td>
+<td>Extended Binary Coded Decimal Interchange Code</td>
+</tr>
+<tr>
+<td style="text-align:center;">EDSAC</td>
+<td>Electronic Delay Storage Automatic Calculator</td>
+</tr>
+<tr>
+<td style="text-align:center;">EDVAC</td>
+<td>Electronic Discrete Variable Automatic Calculator</td>
+</tr>
+<tr>
+<td style="text-align:center;">EFM</td>
+<td>Eight-to-Fourteen Modulation</td>
+</tr>
+<tr>
+<td style="text-align:center;">ENIAC</td>
+<td>Electronic Numerical Integrator And Calculator</td>
+</tr>
+<tr>
+<td style="text-align:center;">EPG</td>
+<td>Electronic Programming Guide</td>
+</tr>
+<tr>
+<td style="text-align:center;">EPIC</td>
+<td>Explicitly Parallel Instruction Computing</td>
+</tr>
+<tr>
+<td style="text-align:center;">EPROM</td>
+<td>Erasable Programmable Read-Only Memory</td>
+</tr>
+<tr>
+<td style="text-align:center;">FAT</td>
+<td>File Allocation Table</td>
+</tr>
+<tr>
+<td style="text-align:center;">FDM</td>
+<td>Frequency Division Multiplexing</td>
+</tr>
+<tr>
+<td style="text-align:center;">FEP</td>
+<td>Front End Processor</td>
+</tr>
+<tr>
+<td style="text-align:center;">FLOPS</td>
+<td>Floating Point Operations Per Second</td>
+</tr>
+<tr>
+<td style="text-align:center;">FM</td>
+<td>Frequency Modulation</td>
+</tr>
+<tr>
+<td style="text-align:center;">FMS</td>
+<td>File Management System</td>
+</tr>
+<tr>
+<td style="text-align:center;">FORTRAN</td>
+<td>FORmula TRANslation</td>
+</tr>
+<tr>
+<td style="text-align:center;">FSK</td>
+<td>Frequency Shift Keying</td>
+</tr>
+<tr>
+<td style="text-align:center;">FTP</td>
+<td>File Transfer Protocol</td>
+</tr>
+<tr>
+<td style="text-align:center;">GB</td>
+<td>Giga Bytes</td>
+</tr>
+<tr>
+<td style="text-align:center;">GFLOPS</td>
+<td>Giga FLOPS</td>
+</tr>
+<tr>
+<td style="text-align:center;">GHz</td>
+<td>Giga Hertz</td>
+</tr>
+<tr>
+<td style="text-align:center;">GNU</td>
+<td>Gnu Not Unix</td>
+</tr>
+<tr>
+<td style="text-align:center;">GPRS</td>
+<td>General Packet Radio Service</td>
+</tr>
+<tr>
+<td style="text-align:center;">GSM</td>
+<td>Global System for Mobile communication</td>
+</tr>
+<tr>
+<td style="text-align:center;">GUI</td>
+<td>Graphical User Interface</td>
+</tr>
+<tr>
+<td style="text-align:center;">HP</td>
+<td>Hewlett Packard</td>
+</tr>
+<tr>
+<td style="text-align:center;">HSS</td>
+<td>Hierarchical Storage System</td>
+</tr>
+<tr>
+<td style="text-align:center;">HTML</td>
+<td>HyperText Markup Language</td>
+</tr>
+<tr>
+<td style="text-align:center;">HTTP</td>
+<td>HyperText Transport Protocol</td>
+</tr>
+<tr>
+<td style="text-align:center;">IBM</td>
+<td>International Business Machine</td>
+</tr>
+<tr>
+<td style="text-align:center;">IC</td>
+<td>Integrated Circuit</td>
+</tr>
+<tr>
+<td style="text-align:center;">IDN</td>
+<td>Integrated Digital Networks</td>
+</tr>
+<tr>
+<td style="text-align:center;">IP</td>
+<td>Internet Protocol</td>
+</tr>
+<tr>
+<td style="text-align:center;">IrDA</td>
+<td>Infrared Data Association</td>
+</tr>
+<tr>
+<td style="text-align:center;">ISDN</td>
+<td>Integrated Services Digital Network</td>
+</tr>
+<tr>
+<td style="text-align:center;">ISP</td>
+<td>Internet Service Provider</td>
+</tr>
+<tr>
+<td style="text-align:center;">JPEG</td>
+<td>Joint Photographic Experts Group</td>
+</tr>
+<tr>
+<td style="text-align:center;">JRE</td>
+<td>Java Runtime Engine</td>
+</tr>
+<tr>
+<td style="text-align:center;">JSP</td>
+<td>Java Server Pages</td>
+</tr>
+<tr>
+<td style="text-align:center;">KB</td>
+<td>Kilo Bytes</td>
+</tr>
+<tr>
+<td style="text-align:center;">KHz</td>
+<td>Kilo Hertz</td>
+</tr>
+<tr>
+<td style="text-align:center;">LAN</td>
+<td>Local Area Network</td>
+</tr>
+<tr>
+<td style="text-align:center;">LCD</td>
+<td>Liquid Crystal Display</td>
+</tr>
+<tr>
+<td style="text-align:center;">LED</td>
+<td>Light Emitting Diode</td>
+</tr>
+<tr>
+<td style="text-align:center;">LPM</td>
+<td>Line Per Minute</td>
+</tr>
+<tr>
+<td style="text-align:center;">LSI</td>
+<td>Large Scael Integration</td>
+</tr>
+<tr>
+<td style="text-align:center;">MAN</td>
+<td>Metropolitan Area Network</td>
+</tr>
+<tr>
+<td style="text-align:center;">MAR</td>
+<td>Memory Address Register</td>
+</tr>
+<tr>
+<td style="text-align:center;">MB</td>
+<td>Mega Bytes</td>
+</tr>
+<tr>
+<td style="text-align:center;">MBR</td>
+<td>Memory Buffer Register</td>
+</tr>
+<tr>
+<td style="text-align:center;">MHz</td>
+<td>Mega Hertz</td>
+</tr>
+<tr>
+<td style="text-align:center;">MIDI</td>
+<td>Musical Instrument Digital Interface</td>
+</tr>
+<tr>
+<td style="text-align:center;">MIPS</td>
+<td>Millions of Instructions Per Second</td>
+</tr>
+<tr>
+<td style="text-align:center;">MNP</td>
+<td>Microcom Network Protocol</td>
+</tr>
+<tr>
+<td style="text-align:center;">MPEG</td>
+<td>Moving Pictures Experts Group</td>
+</tr>
+<tr>
+<td style="text-align:center;">MS-DOS</td>
+<td>MicroSoft Disk Operating System</td>
+</tr>
+<tr>
+<td style="text-align:center;">MVT</td>
+<td>Multiprogramming with Variable Tasks</td>
+</tr>
+<tr>
+<td style="text-align:center;">NIC</td>
+<td>Network Interface Card</td>
+</tr>
+<tr>
+<td style="text-align:center;">NICNET</td>
+<td>National Informatics Center NETwork</td>
+</tr>
+<tr>
+<td style="text-align:center;">NOS</td>
+<td>Network Operating System</td>
+</tr>
+<tr>
+<td style="text-align:center;">OCR</td>
+<td>Optical Character Recognition</td>
+</tr>
+<tr>
+<td style="text-align:center;">OMR</td>
+<td>Optical Mark Reader</td>
+</tr>
+<tr>
+<td style="text-align:center;">OS</td>
+<td>Operating System</td>
+</tr>
+<tr>
+<td style="text-align:center;">OSI</td>
+<td>Open System Interconnection</td>
+</tr>
+<tr>
+<td style="text-align:center;">OSS</td>
+<td>Open Source Software</td>
+</tr>
+<tr>
+<td style="text-align:center;">PAN</td>
+<td>Personal Area Network</td>
+</tr>
+<tr>
+<td style="text-align:center;">PC</td>
+<td>Personal Computer</td>
+</tr>
+<tr>
+<td style="text-align:center;">PDF</td>
+<td>Portable Document Format</td>
+</tr>
+<tr>
+<td style="text-align:center;">PDL</td>
+<td>Program Design Language</td>
+</tr>
+<tr>
+<td style="text-align:center;">PDP</td>
+<td>Program Data Processor</td>
+</tr>
+<tr>
+<td style="text-align:center;">PIP</td>
+<td>Peripheral Interchange Program</td>
+</tr>
+<tr>
+<td style="text-align:center;">PROM</td>
+<td>Programmable Read-Only Memory</td>
+</tr>
+<tr>
+<td style="text-align:center;">QoS</td>
+<td>Quality of Service</td>
+</tr>
+<tr>
+<td style="text-align:center;">RAM</td>
+<td>Random Access Memory</td>
+</tr>
+<tr>
+<td style="text-align:center;">ROM</td>
+<td>Read Only Memory</td>
+</tr>
+<tr>
+<td style="text-align:center;">SDLC</td>
+<td>Software Development Life Cycle</td>
+</tr>
+<tr>
+<td style="text-align:center;">SEQUEL</td>
+<td>Structured English QUEry Language</td>
+</tr>
+<tr>
+<td style="text-align:center;">SGML</td>
+<td>Syntax for Generalized Markup Language</td>
+</tr>
+<tr>
+<td style="text-align:center;">SIMM</td>
+<td>Single In-line Memory Module</td>
+</tr>
+<tr>
+<td style="text-align:center;">SNA</td>
+<td>Systems Network Architecture</td>
+</tr>
+<tr>
+<td style="text-align:center;">SNOBOL</td>
+<td>StriNg Oriented and symBOlic Language</td>
+</tr>
+<tr>
+<td style="text-align:center;">SQL</td>
+<td>Structured Query Language</td>
+</tr>
+<tr>
+<td style="text-align:center;">SRAM</td>
+<td>Static RAM</td>
+</tr>
+<tr>
+<td style="text-align:center;">SSI</td>
+<td>Small Scale Integration</td>
+</tr>
+<tr>
+<td style="text-align:center;">TB</td>
+<td>Tera Bytes</td>
+</tr>
+<tr>
+<td style="text-align:center;">TCP</td>
+<td>Transport Control Protocol</td>
+</tr>
+<tr>
+<td style="text-align:center;">TDM</td>
+<td>Time Division Multiplexing</td>
+</tr>
+<tr>
+<td style="text-align:center;">UDP</td>
+<td>User Datagram Protocol</td>
+</tr>
+<tr>
+<td style="text-align:center;">ULSI</td>
+<td>Ultra Large Scale Integration</td>
+</tr>
+<tr>
+<td style="text-align:center;">UPC</td>
+<td>Universal Product Code</td>
+</tr>
+<tr>
+<td style="text-align:center;">URL</td>
+<td>Uniform Resource Locator</td>
+</tr>
+<tr>
+<td style="text-align:center;">USB</td>
+<td>Universal Serial Bus</td>
+</tr>
+<tr>
+<td style="text-align:center;">UTF</td>
+<td>Unicode Transformation Format</td>
+</tr>
+<tr>
+<td style="text-align:center;">VAN</td>
+<td>Value Added Network</td>
+</tr>
+<tr>
+<td style="text-align:center;">VCR</td>
+<td>Video Cassette Recorder</td>
+</tr>
+<tr>
+<td style="text-align:center;">VDT</td>
+<td>Video Display Terminal</td>
+</tr>
+<tr>
+<td style="text-align:center;">VGA</td>
+<td>Video Graphics Array</td>
+</tr>
+<tr>
+<td style="text-align:center;">VOD</td>
+<td>Video-On-Demand</td>
+</tr>
+<tr>
+<td style="text-align:center;">VoIP</td>
+<td>Voice over Internet Protocol</td>
+</tr>
+<tr>
+<td style="text-align:center;">VSAT</td>
+<td>Very Small Aperture Terminal</td>
+</tr>
+<tr>
+<td style="text-align:center;">WAN</td>
+<td>Wide Area Network</td>
+</tr>
+<tr>
+<td style="text-align:center;">WAP</td>
+<td>Wireless Application Protocol</td>
+</tr>
+<tr>
+<td style="text-align:center;">WiMAX</td>
+<td>Worldwide Interoperability for Microwave Access</td>
+</tr>
+<tr>
+<td style="text-align:center;">WLAN</td>
+<td>Wireless Local Area Network</td>
+</tr>
+<tr>
+<td style="text-align:center;">WLL</td>
+<td>Wireless Local Loop</td>
+</tr>
+<tr>
+<td style="text-align:center;">WORM</td>
+<td>Write Once Read Many</td>
+</tr>
+<tr>
+<td style="text-align:center;">WWW</td>
+<td>World Wide Web</td>
+</tr>
+<tr>
+<td style="text-align:center;">XHTML</td>
+<td>eXtensible HyperText Markup Language</td>
+</tr>
+<tr>
+<td style="text-align:center;">XML</td>
+<td>eXtensible Markup Language</td>
+</tr>
+<tr>
+<td style="text-align:center;">X.400</td>
+<td>Electronic Mail Protocol</td>
+</tr>
+<tr>
+<td style="text-align:center;">X.500</td>
+<td>Directory Server Protocol</td>
+</tr>
+</tbody>
