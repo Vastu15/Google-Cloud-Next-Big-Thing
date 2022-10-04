@@ -12,7 +12,7 @@ from typing import Optional
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.cors import CORSMiddleware
 from ml_backend.camera import Detect
-
+import json
 app = FastAPI(debug=True)
 
 app.add_middleware(
@@ -33,24 +33,53 @@ def read_root():
 async def upload(background_tasks: BackgroundTasks, imageData: bytes = File(...), UID: str = Form(...)):
     print(UID)
     background_tasks.add_task(saveImage, UID=UID, imageData=imageData)
-    # return {"message": "Success"} 
-    # try:
-    #     with open(UID+".jpg", 'wb') as f:
-    #         f.write(imageData)
-    # except Exception as e:
-    #     print(e)
-   
-def saveImage(UID, imageData):
+
+@app.post("/signal")
+async def signal( UID: str = Form(...)):
     print(UID)
+    with open('data.json', 'r') as openfile:
+            data = json.load(openfile)
+            print(data[UID])
+    
+ 
+def saveImage(UID, imageData):
+        
     try:
         with open(UID+".jpg", 'wb') as f:
             f.write(imageData)
         nm=UID+".jpg"
         nmm=cv2.imread(nm)
- 
-
-        print(detect_img.get_frame(nmm))
-
+        ml_data=(detect_img.get_frame(nmm))
+        print(ml_data)
+        with open('data.json', 'r') as openfile:
+            data = json.load(openfile)
+            if data=={} :
+                data={
+                    UID:
+                        {'mouth': "", 
+                        'head_up': "", 
+                        'head_dwn': "",
+                        'head_left': "",
+                        'head_right': "",
+                        'emo':""}}
+            elif UID not in data:
+                data[UID]={'mouth': "", 
+                        'head_up': "", 
+                        'head_dwn': "",
+                        'head_left': "",
+                        'head_right': "",
+                        'emo': ""}
+               
+            for i in data[UID]:
+                    if i=="emo" and ml_data["emo"]!=[]:
+                        data[UID][i]+=str(ml_data[i][0])+","
+                    elif i!="emo" and ml_data[i]!=0:
+                        data[UID][i]+=str(ml_data[i])+","
+         
+            
+        with open("data.json", "w") as outfile:
+            json.dump(data, outfile)     
+        print("done")
     except Exception as e:
         print(e)
 if __name__ == '__main__':
