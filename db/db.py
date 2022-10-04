@@ -56,3 +56,10 @@ class UpdateDB:
                     "INSERT INTO studentsMeta (userName, mouth, headUp, headDown, headLeft, headRight, emo, classID) VALUES (:userName, :mouth, :headUp, :headDown, :headLeft, :headRight, :emo, :classID)",
                 )
                 db_conn.execute(insert_stmt, userName=usr, mouth=mouth, headUp=headUp, headDown=headDown, headLeft=headLeft, headRight=headRight, emo=emo, classID=classId)
+
+    def getStudentsMeta(self, usr):
+        with self.pool.connect() as db_conn:
+            sql = "SELECT * FROM studentsMeta WHERE userName = %s"
+            val = (usr)
+            results = db_conn.execute(sql, val).fetchall()
+        return results
