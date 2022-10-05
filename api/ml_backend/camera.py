@@ -3,7 +3,7 @@ import json
 import math
 import numpy as np
 import tensorflow as tf
-
+import os.path
 from tensorflow import keras
 from os.path import dirname, join
 from tensorflow import keras
@@ -28,9 +28,6 @@ class Detect:
             "api/ml_backend/models/haarcascade_frontalface_default.xml"
         )
         self.emotion_model_path = "api/ml_backend/models/_mini_XCEPTION.102-0.66.hdf5"
-        import os.path
-
-        # os.path.isfile(fname)
         print("emotion model path", os.path.isfile(self.emotion_model_path))
         print("detection model path", os.path.isfile(self.detection_model_path))
         self.face_detection = cv2.CascadeClassifier(self.detection_model_path)
