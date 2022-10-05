@@ -24,8 +24,8 @@ import numpy as np
 
 class Detect:
     def __init__(self):
-        self.detection_model_path = "models/haarcascade_frontalface_default.xml"
-        self.emotion_model_path = "models/_mini_XCEPTION.102-0.66.hdf5"
+        self.detection_model_path = "/home/utsav15_goel/Google-Cloud-Next-Big-Thing/api/ml_backend/models/haarcascade_frontalface_default.xml"
+        self.emotion_model_path = "/home/utsav15_goel/Google-Cloud-Next-Big-Thing/api/ml_backend/models/_mini_XCEPTION.102-0.66.hdf5"
         self.face_detection = cv2.CascadeClassifier(self.detection_model_path)
         self.emotion_classifier = load_model(self.emotion_model_path, compile=False)
         self.EMOTIONS = [
