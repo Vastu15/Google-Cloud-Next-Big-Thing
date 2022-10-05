@@ -30,18 +30,18 @@ Api backend is hosted on compute instance on GCP. ANd contains following routes:
 
 ## Instructions to run application:
 
-  1. Create a python 3.8 virtual environment and proceeed with installation there:
+  1. Create a python 3.7 virtual environment and proceeed with installation there:
   
   2. Clone this repository cd to folder and install the modules in requirements.txt and run
-       pip install -r requirements.txt.
+       ```pip install -r requirements.txt.```
 
   3. To run this project, Open command prompt type 
 
-  4. Type python manage.py migrate and then python manage.py runserver
+  4. Type ```python main.py``` to run the application backend.
   
-  5. You Can See The Website Live in  http://127.0.0.1:8000/
+  5. You can see the backend Live at  http://127.0.0.1:8000/
   
-  6. Create a new account at the sign up page and avail the services.
+  6. To run the Frontend use ```npm start```.
 
 ## Motivation for the project:
 
@@ -50,7 +50,7 @@ The past 2 years of the pandemic have had a very significant impact on our lives
 
 ## Tech stack and Modules used:
 
-        React , Flask , Python , NLP ,TensorFlow , OpenCV , Assembly ai
+        React , Fast Api , Python , NLP ,TensorFlow , OpenCV , Keras, Open AI, GCP Cloud, SQL, Node.js
         
         
 ## AI based monitoring processes:
@@ -59,11 +59,9 @@ The past 2 years of the pandemic have had a very significant impact on our lives
   and head,eye,mouth movements, which can be converted into a meta-score based on predefined threshold values 
   selected by the authority who conducts the assessment. The thresholds for the two parameters can be adjusted independently, avoiding false results.
 
-## Assembly ai
+## Helping Hand AI
 
-  Using Assembly ai Sentiment Analysis, can detect the sentiment of each sentence of speech spoken in your audio files.
-  Sentiment Analysis returns a result of POSITIVE, NEGATIVE, or NEUTRAL for each sentence in the transcript.We also 
-  incorporate these results to our meta-score.
+  Using Helping Hand AI we make it easy for both teacher and students. Features like automatic explanation video creation with chapter pdf helps teacher create explanation videos for students with just one click. 
   
 ## Overview of Website:
 
