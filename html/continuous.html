@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>WebcamJS Test Page</title>
+	 
 	<style type="text/css">
 		body { font-family: Helvetica, sans-serif; }
 		h2, h3 { margin-top:0; }
@@ -19,26 +19,40 @@
 </head>
 <body>	
 	<div class="left">
-		<h1>WebcamJS Test Page</h1>
-		<h3>Demonstrates continuous capture &amp; display</h3>
-		
+		 
 		<div id="my_camera"></div>
 		
 		<!-- A button for taking snaps -->
 		<form>
-			<input type="button" value="Start" onClick="start_snapping()">
-			<input type="button" value="Stop" onClick="stop_snapping()">
-			<input type="button" value="Clear" onClick="erase_snaps()">
+			<input type="button" value="Start" id="btnn" onClick="start_snapping()">
+			
+			<!-- <input type="button" value="Stop" onClick="stop_snapping()">
+			<input type="button" value="Clear" onClick="erase_snaps()"> -->
 		</form>
+		
 	</div>
 	
-	<div class="right half">
-		<div id="results"><p>Your captured images will appear here...</p></div>
-	</div>
+ 
 	
 	<!-- First, include the Webcam.js JavaScript Library -->
 	<script type="text/javascript" src="../webcam.min.js"></script>
-	
+	<script>
+		document.getElementById('btnn').style.visibility = 'hidden';
+	</script>
+	<script>
+			setInterval(function(){
+			
+			document.getElementById("btnn").click();	
+			// var url_string =window.location.href; 
+			// var url = new URL(url_string);
+			// var uid = url.searchParams.get("uid");
+			// console.log(c);
+			let params = (new URL(document.location)).searchParams;
+			window.value= params.get("uid");
+			
+			}, 1000);
+			 
+	</script>
 	<!-- Configure a few settings and attach camera -->
 	<script language="JavaScript">
 		Webcam.set({
@@ -48,6 +62,7 @@
 			jpeg_quality: 90
 		});
 		Webcam.attach( '#my_camera' );
+
 	</script>
 	
 	<!-- Code to handle taking the snapshot and displaying it locally -->
@@ -82,7 +97,7 @@
 			var blob = base64ToBlob(base64ImageContent, 'image/png');  
 			var formdata = new FormData();
 			formdata.append("imageData", blob);
-			formdata.append("UID", "vastu");
+			formdata.append("UID",window.value);
 
 			var requestOptions = {
 			method: 'POST',
@@ -102,7 +117,7 @@
 				uploadImage(data_uri);
 				var img = new Image();
 				img.src = data_uri;			
-				document.getElementById('results').appendChild( img );
+				//document.getElementById('results').appendChild( img );
 			} );
 			
 		}
@@ -110,7 +125,7 @@
 		function start_snapping() {
 			if (!timer) {
 				// take_snapshot();
-				timer = setInterval( take_snapshot, 500 );
+				timer = setInterval( take_snapshot, 1000 );
 			}
 		}
 		
