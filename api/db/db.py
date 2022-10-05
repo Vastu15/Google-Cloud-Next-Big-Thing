@@ -1,8 +1,9 @@
-import google.cloud.sql.connector as con
+from google.cloud.sql.connector import Connector
 import sqlalchemy
 import os
 from dotenv import load_dotenv, find_dotenv
 
+con = Connector()
 env_path = find_dotenv(".env.dev")
 load_dotenv(dotenv_path=env_path)
 credential_path = os.getenv("GCP_FILE_PATH")
