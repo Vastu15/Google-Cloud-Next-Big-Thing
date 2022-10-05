@@ -12,6 +12,7 @@ from typing import Optional
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.cors import CORSMiddleware
 from api.ml_backend.camera import Detect
+from api.db.db import *
 
 from api.routes import gcp, openai, dbRoutes
 import json
@@ -20,6 +21,7 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv, find_dotenv
 
+DB = UpdateDB()
 env_path = find_dotenv(".env.dev")
 load_dotenv(dotenv_path=env_path)
 
@@ -60,7 +62,8 @@ async def signal(UID: str = Form(...)):
     print(UID)
     with open("data.json", "r") as openfile:
         data = json.load(openfile)
-        print(data[UID])
+        data = data[UID]
+        DB.updateStudentsMeta( UID, data["mouth"], data["head_up"], data["head_dwn"], data["head_left"], data["head_right"], data["emo"])
 
 
 def saveImage(UID, imageData):
