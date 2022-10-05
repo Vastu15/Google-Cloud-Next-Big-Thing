@@ -12,6 +12,7 @@ from typing import Optional
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.cors import CORSMiddleware
 from api.ml_backend.camera import Detect
+
 from api.routes import gcp, openai, dbRoutes
 import json
 
@@ -110,6 +111,7 @@ def saveImage(UID, imageData):
 app.include_router(gcp.gcp_api_router)
 app.include_router(openai.openai_api_router)
 app.include_router(dbRoutes.db_router)
+
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True, debug=True)
