@@ -14,7 +14,7 @@ load_dotenv(dotenv_path=env_path)
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-openai_api_router = APIRouter(prefix="/openai/v1", tags=["text_summarizer"])
+openai_api_router = APIRouter(prefix="/openai/v1", tags=["OpenAI Functions"])
 
 
 @openai_api_router.post("/text_summarizer")
