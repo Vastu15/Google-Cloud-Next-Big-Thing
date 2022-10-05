@@ -8,10 +8,11 @@ with added intelligence that continuously monitors mental health issues among st
 ## Features:
 
 - AI based online classroom system
+- Multiple AI based solutions to help students with different tasks like understanding existing codes, summary extractorn to get easy understanding of lessons etc.
+- AI powered chatbot to help students find resources esily.
+- Combining different models of summary extractor, text to speech and deep fake to help teacher create explanation videos for different chapters by just uploading text files of chapters.
 - Detecting emotion levels and connecting counsellors
 - Pose estimnation and eye tracking models for calculating the attentiveness during the class.
-
-
 
 ## Instructions to run application:
 
