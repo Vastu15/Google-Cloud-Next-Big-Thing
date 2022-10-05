@@ -2,9 +2,8 @@
 This repo is created for project submitted in Google Cloud Next Big Thing Hackathon.
 
 ## Vidya [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
-    Making Education Accessible, Smarter & Stress free. Vidya is complete student mnagement platform that focuses on providing best in class platform
-    with added intelligence that continuously monitors mental health issues among students at an early stage using AI by monitoring parameters like             attentiveness, emotional state, academic performance during classes so that they can receive appropriate care on time.
+Making Education Accessible, Smarter & Stress free. Vidya is complete student mnagement platform that focuses on providing best in class platform
+with added intelligence that continuously monitors mental health issues among students at an early stage using AI by monitoring parameters like      attentiveness, emotional state, academic performance during classes so that they can receive appropriate care on time.
     
 ## Features:
 
