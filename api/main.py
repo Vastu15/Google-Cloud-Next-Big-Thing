@@ -11,7 +11,7 @@ from fastapi import FastAPI, Form, File, BackgroundTasks
 from typing import Optional
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.cors import CORSMiddleware
-from ml_backend.camera import Detect
+from api.ml_backend.camera import Detect
 from api.routes import gcp, openai
 import json
 
