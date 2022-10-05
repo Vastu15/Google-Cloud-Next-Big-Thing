@@ -3,7 +3,7 @@ from importlib import reload
 import base64
 import numpy as np
 import requests
-from PIL import Image 
+from PIL import Image
 from io import BytesIO
 import cv2
 import uvicorn
@@ -12,7 +12,16 @@ from typing import Optional
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.cors import CORSMiddleware
 from ml_backend.camera import Detect
+from api.routes import gcp, openai
 import json
+
+import os
+from pathlib import Path
+from dotenv import load_dotenv, find_dotenv
+
+env_path = find_dotenv(".env.dev")
+load_dotenv(dotenv_path=env_path)
+
 app = FastAPI(debug=True)
 
 app.add_middleware(
@@ -23,64 +32,84 @@ app.add_middleware(
     allow_methods=["*"],
 )
 
-detect_img=Detect()
- 
+
+credential_path = os.getenv("GCP_FILE_PATH")
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credential_path
+
+detect_img = Detect()
+
+
 @app.get("/")
 def read_root():
     return {"Hello": "Welcome to the next BIG Thing!"}
 
+
 @app.post("/upload")
-async def upload(background_tasks: BackgroundTasks, imageData: bytes = File(...), UID: str = Form(...)):
+async def upload(
+    background_tasks: BackgroundTasks,
+    imageData: bytes = File(...),
+    UID: str = Form(...),
+):
     print(UID)
     background_tasks.add_task(saveImage, UID=UID, imageData=imageData)
 
+
 @app.post("/signal")
-async def signal( UID: str = Form(...)):
+async def signal(UID: str = Form(...)):
     print(UID)
-    with open('data.json', 'r') as openfile:
-            data = json.load(openfile)
-            print(data[UID])
-    
- 
+    with open("data.json", "r") as openfile:
+        data = json.load(openfile)
+        print(data[UID])
+
+
 def saveImage(UID, imageData):
-        
+
     try:
-        with open(UID+".jpg", 'wb') as f:
+        with open(f"{UID}.jpg", "wb") as f:
             f.write(imageData)
-        nm=UID+".jpg"
-        nmm=cv2.imread(nm)
-        ml_data=(detect_img.get_frame(nmm))
+        nm = f"{UID}.jpg"
+        nmm = cv2.imread(nm)
+        ml_data = detect_img.get_frame(nmm)
         print(ml_data)
-        with open('data.json', 'r') as openfile:
+        with open("data.json", "r") as openfile:
             data = json.load(openfile)
-            if data=={} :
-                data={
-                    UID:
-                        {'mouth': "", 
-                        'head_up': "", 
-                        'head_dwn': "",
-                        'head_left': "",
-                        'head_right': "",
-                        'emo':""}}
+            if data == {}:
+                data = {
+                    UID: {
+                        "mouth": "",
+                        "head_up": "",
+                        "head_dwn": "",
+                        "head_left": "",
+                        "head_right": "",
+                        "emo": "",
+                    }
+                }
             elif UID not in data:
-                data[UID]={'mouth': "", 
-                        'head_up': "", 
-                        'head_dwn': "",
-                        'head_left': "",
-                        'head_right': "",
-                        'emo': ""}
-               
+                data[UID] = {
+                    "mouth": "",
+                    "head_up": "",
+                    "head_dwn": "",
+                    "head_left": "",
+                    "head_right": "",
+                    "emo": "",
+                }
+
             for i in data[UID]:
-                    if i=="emo" and ml_data["emo"]!=[]:
-                        data[UID][i]+=str(ml_data[i][0])+","
-                    elif i!="emo" and ml_data[i]!=0:
-                        data[UID][i]+=str(ml_data[i])+","
-         
-            
+                if i == "emo" and ml_data["emo"] != []:
+                    data[UID][i] += f"{str(ml_data[i][0])},"
+                elif i != "emo" and ml_data[i] != 0:
+                    data[UID][i] += f"{str(ml_data[i])},"
+
         with open("data.json", "w") as outfile:
-            json.dump(data, outfile)     
+            json.dump(data, outfile)
         print("done")
     except Exception as e:
         print(e)
-if __name__ == '__main__':
+
+
+app.include_router(gcp.gcp_api_router)
+app.include_router(openai.openai_api_router)
+
+
+if __name__ == "__main__":
     uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True, debug=True)
