@@ -76,7 +76,6 @@ class UpdateDB:
                     headLeft=headLeft,
                     headRight=headRight,
                     emo=emo,
-                    classID=classId,
                 )
 
     def getStudentsMeta(self, usr):
