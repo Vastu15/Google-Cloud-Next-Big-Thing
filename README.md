@@ -17,9 +17,13 @@ with added intelligence that continuously monitors mental health issues among st
 ## Routes
 Api backend is hosted on compute instance on GCP. ANd contains following routes:
 - Frame Upload(To send frames from webcam to ML models for inference)
+<img src="screenshots/1.png">
 - GCP functions(Different GCP API like spech-to-text)
+<img src="screenshots/2.png">
 - Open AI(Ml models like text extractor, grammer correction, code understanding etc.)
+<img src="screenshots/3.png">
 - DB router(DB access)
+<img src="screenshots/4.png">
 
 ## Instructions to run application:
 
