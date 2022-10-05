@@ -27,10 +27,9 @@ async def upload(
     headLeft: str = Form(...),
     headRight: str = Form(...),
     emo: str = Form(...),
-    classId: str = Form(...),
 ):
     DB.updateStudentsMeta(
-        userName, mouth, headUp, headDown, headLeft, headRight, emo, classId
+        userName, mouth, headUp, headDown, headLeft, headRight, emo
     )
 
 

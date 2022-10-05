@@ -59,12 +59,12 @@ class UpdateDB:
         with self.pool.connect() as db_conn:
             status = self.checkRecordExists(usr)
             if status:
-                sql = "UPDATE studentsMeta SET mouth=%s, headUp=%s, headDown=%s, headLeft=%s, headRight=%s, emo=%s, classID=%s WHERE userName = %s"
-                val = (mouth, headUp, headDown, headLeft, headRight, emo, classId, usr)
+                sql = "UPDATE studentsMeta SET mouth=%s, headUp=%s, headDown=%s, headLeft=%s, headRight=%s, emo=%s WHERE userName = %s"
+                val = (mouth, headUp, headDown, headLeft, headRight, emo, usr)
                 db_conn.execute(sql, val)
             else:
                 insert_stmt = sqlalchemy.text(
-                    "INSERT INTO studentsMeta (userName, mouth, headUp, headDown, headLeft, headRight, emo, classID) VALUES (:userName, :mouth, :headUp, :headDown, :headLeft, :headRight, :emo, :classID)",
+                    "INSERT INTO studentsMeta (userName, mouth, headUp, headDown, headLeft, headRight, emo) VALUES (:userName, :mouth, :headUp, :headDown, :headLeft, :headRight, :emo)",
                 )
                 db_conn.execute(
                     insert_stmt,
