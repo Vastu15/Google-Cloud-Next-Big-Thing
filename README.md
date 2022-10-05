@@ -8,11 +8,18 @@ with added intelligence that continuously monitors mental health issues among st
 ## Features:
 
 - AI based online classroom system
-- Multiple AI based solutions to help students with different tasks like understanding existing codes, summary extractorn to get easy understanding of lessons etc.
+- Multiple AI based solutions to help students with different tasks like understanding existing codes, summary extractor to get easy understanding of lessons etc.
 - AI powered chatbot to help students find resources esily.
 - Combining different models of summary extractor, text to speech and deep fake to help teacher create explanation videos for different chapters by just uploading text files of chapters.
 - Detecting emotion levels and connecting counsellors
 - Pose estimnation and eye tracking models for calculating the attentiveness during the class.
+
+## Routes
+Api backend is hosted on compute instance on GCP. ANd contains following routes:
+- Frame Upload(To send frames from webcam to ML models for inference)
+- GCP functions(Different GCP API like spech-to-text)
+- Open AI(Ml models like text extractor, grammer correction, code understanding etc.)
+- DB router(DB access)
 
 ## Instructions to run application:
 
