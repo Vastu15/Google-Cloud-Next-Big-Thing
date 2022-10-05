@@ -24,7 +24,7 @@ import numpy as np
 class Detect():
     def __init__(self):
         self.detection_model_path = 'api/ml_backend/models/haarcascade_frontalface_default.xml'
-        self.emotion_model_path = 'api/ml_backend/models/_mini_XCEPTION.102-0.66.hdf5'
+        self.emotion_model_path = 'api/ml_backend/models/mini_XCEPTION.102-0.66.hdf5'
         self.face_detection = cv2.CascadeClassifier(self.detection_model_path)
         self.emotion_classifier = load_model(self.emotion_model_path, compile=False)
         self.EMOTIONS = ["angry" ,"disgust","scared", "happy", "sad", "surprised",
