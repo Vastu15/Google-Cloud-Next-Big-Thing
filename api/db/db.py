@@ -54,7 +54,7 @@ class UpdateDB:
         return False
 
     def updateStudentsMeta(
-        self, usr, mouth, headUp, headDown, headLeft, headRight, emo, classId
+        self, usr, mouth, headUp, headDown, headLeft, headRight, emo
     ):
         # create connection pool with 'creator' argument to our connection object function
         with self.pool.connect() as db_conn:
