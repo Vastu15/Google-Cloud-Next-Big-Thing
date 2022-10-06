@@ -8,7 +8,7 @@ with added intelligence that continuously monitors mental health issues among st
 [![Alt text](https://img.youtube.com/vi/9irTaI7YtQ8/0.jpg)](https://www.youtube.com/watch?v=9irTaI7YtQ8)
 ## Note
 
-Please find the credentials to use the dashboard hosted at [Vidya](https://vidya-next.netlify.app/) below:-
+Please find the credentials to use the dashboard hosted at [Vidya Dashboard](https://vidya-next.netlify.app/) below:-
 - Teacher 
 ```Username - teacher@gmail.com```
 ```Password - teacher@123```
@@ -27,7 +27,7 @@ Please find the credentials to use the dashboard hosted at [Vidya](https://vidya
 
 
 ## Routes
-Api backend is hosted on compute instance on GCP. ANd contains following routes:
+Api backend is hosted on compute instance on GCP [Vidya Backend](http://35.224.123.197/docs) and contains following routes :
 - Frame Upload(To send frames from webcam to ML models for inference)
 
 - GCP functions(Different GCP API like spech-to-text)
