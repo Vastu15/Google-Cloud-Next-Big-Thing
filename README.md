@@ -6,6 +6,16 @@ Making Education Accessible, Smarter & Stress free. Vidya is complete student mn
 with added intelligence that continuously monitors mental health issues among students at an early stage using AI by monitoring parameters like      attentiveness, emotional state, academic performance during classes so that they can receive appropriate care on time. Checkout [youtube video](https://www.youtube.com/watch?v=9irTaI7YtQ8) for more information).
                   
 [![Alt text](https://img.youtube.com/vi/9irTaI7YtQ8/0.jpg)](https://www.youtube.com/watch?v=9irTaI7YtQ8)
+## Note
+
+Please find the credentials to use the dashboard hosted at [Vidya](https://vidya-next.netlify.app/) below:-
+- Teacher 
+```Username - teacher@gmail.com```
+```Password - teacher@123```
+- Student
+```Username - student@gmail.com```
+```Password - student@123```
+
 ## Features:
 
 - AI based online classroom system
@@ -14,6 +24,7 @@ with added intelligence that continuously monitors mental health issues among st
 - Combining different models of summary extractor, text to speech and deep fake to help teacher create explanation videos for different chapters by just uploading text files of chapters.
 - Detecting emotion levels and connecting counsellors
 - Pose estimnation and eye tracking models for calculating the attentiveness during the class.
+
 
 ## Routes
 Api backend is hosted on compute instance on GCP. ANd contains following routes:
@@ -64,7 +75,7 @@ The past 2 years of the pandemic have had a very significant impact on our lives
   
 ## Overview of Website:
 
-<img src="ss/Screenshot 2022-10-06 at 2.45.05 PM.png">
+ 
 <img src="ss/Screenshot 2022-10-06 at 3.23.22 PM.png">
 <img src="ss/Screenshot 2022-10-06 at 3.23.36 PM.png">
 <img src="ss/Screenshot 2022-10-06 at 3.23.46 PM.png">
@@ -75,12 +86,3 @@ The past 2 years of the pandemic have had a very significant impact on our lives
 <img src="ss/Screenshot 2022-10-06 at 3.25.15 PM.png">
 <img src="ss/Screenshot 2022-10-06 at 3.25.21 PM.png">
 
-## Note
-
-Please find the credentials to use the dashboard hosted at [Vidya](https://vidya-next.netlify.app/) below:-
-- Teacher 
-```Username - teacher@gmail.com```
-```Password - teacher@123```
-- Student
-```Username - student@gmail.com```
-```Password - student@123```
