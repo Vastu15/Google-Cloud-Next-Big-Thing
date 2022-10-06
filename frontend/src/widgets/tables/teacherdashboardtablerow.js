@@ -56,7 +56,7 @@ function TeacherDashboardTableRow(props) {
   const textColor = useColorModeValue("gray.700", "white");
   const { isOpen, onOpen, onClose } = useDisclosure();
   var videoUrl =
-    "https://resonancehack.s3.ap-south-1.amazonaws.com/result_voice.mp4";
+    "https://resonancehack.s3.ap-south-1.amazonaws.com/result_voice.mp4?controls=0&loop=1&autoplay=1";
 
   return (
     <Tr>

@@ -26,9 +26,9 @@ export const barChartOptionsDashboard = {
   },
   xaxis: {
     categories: [
-      "Physics",
+      "Introduction to Python",
       "CS",
-      "Maths",
+      "Operating Systemss",
       "History",
       "Geogrphy",
       "FrontEnd",

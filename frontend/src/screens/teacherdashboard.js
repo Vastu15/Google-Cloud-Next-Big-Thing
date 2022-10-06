@@ -174,7 +174,7 @@ const TeacherDashboard = () => {
                             <MdLocalParking color="inherit" />
                           </IconBox>
                           <Text color={"#ffffff"} my="auto" fontSize="lg">
-                            Physics
+                            Introduction to Python
                           </Text>
                         </Flex>
                         <Flex
@@ -239,7 +239,7 @@ const TeacherDashboard = () => {
                             <GiChemicalDrop color="inherit" />
                           </IconBox>
                           <Text color={"#ffffff"} my="auto" fontSize="lg">
-                            Chemistry
+                            Data Structures
                           </Text>
                         </Flex>
                         <Flex

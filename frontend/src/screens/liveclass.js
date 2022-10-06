@@ -45,7 +45,7 @@ const LiveClass = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const navigate = useNavigate();
   var videoUrl =
-    "https://resonancehack.s3.ap-south-1.amazonaws.com/result_voice.mp4";
+    "https://resonancehack.s3.ap-south-1.amazonaws.com/result_voice.mp4?controls=0&loop=1&autoplay=1";
   return (
     <Flex flexDirection="column" pt={{ base: "120px", md: "75px" }}>
       <Modal isOpen={isOpen} onClose={onClose} size="xl" bg={"#000"}>
