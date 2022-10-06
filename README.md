@@ -65,11 +65,13 @@ The past 2 years of the pandemic have had a very significant impact on our lives
   
 ## Overview of Website:
 
-<img src="imgs/a.png">
-<img src="imgs/b.png">
-<img src="imgs/c.png">
-<img src="imgs/d.png">
-<img src="imgs/e.png">
-<img src="imgs/f.png">
-<img src="imgs/g.png">
-<img src="imgs/h.png">
+<img src="ss/Screenshot 2022-10-06 at 2.45.05 PM.png">
+<img src="ss/Screenshot 2022-10-06 at 3.23.22 PM.png">
+<img src="ss/Screenshot 2022-10-06 at 3.23.36 PM.png">
+<img src="ss/Screenshot 2022-10-06 at 3.23.46 PM.png">
+<img src="ss/Screenshot 2022-10-06 at 3.23.54 PM.png">
+<img src="ss/Screenshot 2022-10-06 at 3.24.14 PM.png">
+<img src="ss/Screenshot 2022-10-06 at 3.24.30 PM.png">
+<img src="ss/Screenshot 2022-10-06 at 3.24.59 PM.png">
+<img src="ss/Screenshot 2022-10-06 at 3.25.15 PM.png">
+<img src="ss/Screenshot 2022-10-06 at 3.25.21 PM.png">
