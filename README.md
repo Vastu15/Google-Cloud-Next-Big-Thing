@@ -1,5 +1,5 @@
 # Google-Cloud-Next-Big-Thing
-This repo is created for project submitted in Google Cloud Next Big Thing Hackathon.
+This repo is created for project submitted in Google Cloud Next Big Thing Hackathon. Please find the presentation [here](https://www.canva.com/design/DAFNPTHo0fQ/lTgcJJx9yIUcJwjzleDDfA/edit?utm_content=DAFNPTHo0fQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Vidya [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) [![Python 3.7](https://img.shields.io/badge/Python-3.7-3776AB)](https://www.python.org/downloads/release/python-370/)
 Making Education Accessible, Smarter & Stress free. Vidya is complete student mnagement platform that focuses on providing best in class platform
