@@ -17,6 +17,7 @@ import {
 } from "@chakra-ui/react";
 import IconBox from "./iconbox";
 import { Separator } from "./seperator";
+import { SidebarHelp } from "./sidebarhelp";
 import PropTypes from "prop-types";
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
@@ -245,6 +246,7 @@ function Sidebar(props) {
           <Stack direction="column" mb="40px">
             <Box>{links}</Box>
           </Stack>
+          <SidebarHelp />
         </Box>
       </Box>
     </Box>
@@ -480,6 +482,15 @@ export function SidebarResponsive(props) {
             _focus={{ boxShadow: "none" }}
             _hover={{ boxShadow: "none" }}
           />
+          <DrawerBody maxW="250px" px="1rem">
+            <Box maxW="100%" h="100vh">
+              <Box>{brand}</Box>
+              <Stack direction="column" mb="40px">
+                <Box>{links}</Box>
+              </Stack>
+              <SidebarHelp></SidebarHelp>
+            </Box>
+          </DrawerBody>
         </DrawerContent>
       </Drawer>
     </Flex>
