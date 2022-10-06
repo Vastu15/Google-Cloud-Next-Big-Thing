@@ -77,7 +77,7 @@ The past 2 years of the pandemic have had a very significant impact on our lives
 
 ## Note
 
-Please find the credentials to use the dashboard hosted at [Vidya][https://vidya-next.netlify.app/] below:-
+Please find the credentials to use the dashboard hosted at [Vidya](https://vidya-next.netlify.app/) below:-
 - Teacher 
 ```Username - teacher@gmail.com```
 ```Password - teacher@123```
