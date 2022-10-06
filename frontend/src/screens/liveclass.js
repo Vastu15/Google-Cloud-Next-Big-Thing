@@ -232,7 +232,7 @@ const LiveClass = () => {
         <Flex flex={3}>
           <Card>
             <AspectRatio ratio={1.7}>
-              <iframe title="naruto" src={videoUrl} allowFullScreen />
+              <iframe title="naruto"  src={videoUrl} allowFullScreen  controls="1" autoplay="1"  />
             </AspectRatio>
           </Card>
         </Flex>
