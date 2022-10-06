@@ -3,7 +3,7 @@ This repo is created for project submitted in Google Cloud Next Big Thing Hackat
 
 ## Vidya [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) [![Python 3.7](https://img.shields.io/badge/Python-3.7-3776AB)](https://www.python.org/downloads/release/python-370/)
 Making Education Accessible, Smarter & Stress free. Vidya is complete student mnagement platform that focuses on providing best in class platform
-with added intelligence that continuously monitors mental health issues among students at an early stage using AI by monitoring parameters like      attentiveness, emotional state, academic performance during classes so that they can receive appropriate care on time. Checkout [https://www.youtube.com/watch?v=9irTaI7YtQ8] for more information).
+with added intelligence that continuously monitors mental health issues among students at an early stage using AI by monitoring parameters like      attentiveness, emotional state, academic performance during classes so that they can receive appropriate care on time. Checkout [youtube video](https://www.youtube.com/watch?v=9irTaI7YtQ8) for more information).
                   
 [![Alt text](https://img.youtube.com/vi/9irTaI7YtQ8/0.jpg)](https://www.youtube.com/watch?v=9irTaI7YtQ8)
 ## Features:
@@ -18,16 +18,14 @@ with added intelligence that continuously monitors mental health issues among st
 ## Routes
 Api backend is hosted on compute instance on GCP. ANd contains following routes:
 - Frame Upload(To send frames from webcam to ML models for inference)
-<img src="screenshots/1.png">
 
 - GCP functions(Different GCP API like spech-to-text)
-<img src="screenshots/2.png">
 
 - Open AI(Ml models like text extractor, grammer correction, code understanding etc.)
-<img src="screenshots/3.png">
 
 - DB router(DB access)
-<img src="screenshots/4.png">
+
+<img src="screenshots/Screenshot 2022-10-06 at 6.02.55 PM.png">
 
 ## Instructions to run application:
 
@@ -51,7 +49,7 @@ The past 2 years of the pandemic have had a very significant impact on our lives
 
 ## Tech stack and Modules used:
 
-        React , Fast Api , Python , NLP ,TensorFlow , OpenCV , Keras, Open AI, GCP Cloud, SQL, Node.js
+        React , FastAPI , Python , NLP ,TensorFlow , OpenCV , Keras, Open AI, GCP Cloud, SQL, Node.js
         
         
 ## AI based monitoring processes:
@@ -76,3 +74,13 @@ The past 2 years of the pandemic have had a very significant impact on our lives
 <img src="ss/Screenshot 2022-10-06 at 3.24.59 PM.png">
 <img src="ss/Screenshot 2022-10-06 at 3.25.15 PM.png">
 <img src="ss/Screenshot 2022-10-06 at 3.25.21 PM.png">
+
+## Note
+
+Please find the credentials to use the dashboard hosted at [Vidya][https://vidya-next.netlify.app/] below:-
+- Teacher 
+```Username - teacher@gmail.com```
+```Password - teacher@123```
+- Student
+```Username - student@gmail.com```
+```Password - student@123```
