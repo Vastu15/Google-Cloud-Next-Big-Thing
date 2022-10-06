@@ -7,12 +7,8 @@ from fastapi.params import Form
 import openai
 import os
 from pathlib import Path
-from dotenv import load_dotenv, find_dotenv
-
-env_path = find_dotenv(".env.dev")
-load_dotenv(dotenv_path=env_path)
-
-openai.api_key = os.getenv("OPENAI_API_KEY")
+ 
+openai.api_key = "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"
 
 openai_api_router = APIRouter(prefix="/openai/v1", tags=["OpenAI Functions"])
 
