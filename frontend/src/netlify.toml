@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/search"
+  to = "https://api.mysearch.com"
+  status = 200
+ 
+ # These are optional
+  force = true
+  headers = {X-From = "Netlify"}
+
+  [[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
