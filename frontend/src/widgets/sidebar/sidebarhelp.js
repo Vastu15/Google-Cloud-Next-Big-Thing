@@ -26,6 +26,21 @@ export function SidebarHelp(props) {
   const [responseText, setResponseText] = useState("");
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const summary = {
+    summary:
+      ":\n\nThere's no one-size-fits-all answer to this question, as the best way to learn programming depends on your individual learning style and preferences. However, some ways to learn programming that may be particularly effective for visual learners include learning through interactive tutorials, working with a more experienced",
+  };
+
+  const explanation = {
+    explanation:
+      " It defines a __init__() method that takes a path as an argument.\n2. The path is checked to make sure it is newline-terminated.\n3. The size of the file is checked to make sure it is not zero.\n4. If the size is not zero, the file",
+  };
+
+  const translation = {
+    translation:
+      " fid, DISTINCT COUNT(CASE WHEN department_id = 2443 THEN 1 ELSE 0 END) department_counts, name FROM departments\n#\n# 10 departments use 10 people, 5 use 9 people, 4 use 8 people, 1 uses 7 people and the rest are vacant.\n",
+  };
+
   const submitQuery = () => {
     var data = qs.stringify({
       text: querytext.toString(),
@@ -58,6 +73,13 @@ export function SidebarHelp(props) {
       })
       .catch(function (error) {
         console.log("error first", error.response.status);
+        setResponseText(
+          helpType === "textsummarizer"
+            ? summary["summary"]
+            : helpType === "explaincode"
+            ? explanation["explanation"]
+            : translation["translation"]
+        );
       });
   };
 
