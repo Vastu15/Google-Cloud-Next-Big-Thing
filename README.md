@@ -75,7 +75,7 @@ The past 2 years of the pandemic have had a very significant impact on our lives
 <img src="ss/Screenshot 2022-10-06 at 3.25.15 PM.png">
 <img src="ss/Screenshot 2022-10-06 at 3.25.21 PM.png">
 
-## Credentials
+## Note
 
 Please find the credentials to use the dashboard hosted at [Vidya](https://vidya-next.netlify.app/) below:-
 - Teacher 
